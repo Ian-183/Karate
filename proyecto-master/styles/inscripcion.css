@@ -1,0 +1,153 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    background-color: #000;
+    color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(to bottom right, #1a1a1a, #111);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+    border: 2px solid #ffcc00;
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #ff2d2d;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px #ff2d2d;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    border-bottom: 3px solid #ff2d2d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Párrafos */
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+header p {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ul li::before {
+    content: '✔';
+    color: #ff2d2d;
+    margin-right: 8px;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    padding-left: 5px;
+}
+
+/* Secciones específicas */
+.costos, .beneficios, .requisitos, .inscripcion {
+    margin-bottom: 40px;
+}
+
+/* Botón de inscripción */
+a {
+    display: block;
+    width: 260px;
+    height: auto;
+    margin: 25px auto;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #ff0000, #cc0000);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cc0000;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+a:hover {
+    background: linear-gradient(to right, #ffcc00, #ff2d2d);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffcc00, 0 0 25px #ff2d2d;
+}
+
+/* Pie de página */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    margin-top: 40px;
+    font-weight: bold;
+    border-top: 2px solid #ff2d2d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    a {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    a {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+}

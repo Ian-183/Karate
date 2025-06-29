@@ -1,0 +1,159 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #f8f8f8;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background: linear-gradient(145deg, #111, #1a1a1a);
+  border-radius: 16px;
+  padding: 40px;
+  border: 2px solid #ffcc00;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+}
+
+/* Encabezado */
+header h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffcc00;
+  text-shadow: 2px 2px #ff0000;
+}
+
+header p {
+  text-align: center;
+  font-style: italic;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+/* Subtítulos */
+h2 {
+  color: #ff2d2d;
+  margin: 30px 0 10px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 8px;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+  font-size: 1.1rem;
+}
+
+ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #ff2d2d;
+}
+
+/* Planes y Servicios */
+.planes, .servicios, .beneficios {
+  margin-bottom: 40px;
+}
+
+.planes ul li::before {
+  content: '💠';
+  color: #ffcc00;
+}
+
+.servicios ul li::before {
+  content: '➡';
+  color: #ff2d2d;
+}
+
+.servicios p {
+  color: #ccc;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+/* Imagen */
+.img-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.img-container img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #ffcc00;
+  box-shadow: 0 0 15px #ff2d2d;
+}
+
+/* Botón de regreso */
+a {
+  display: block;
+  margin: 40px auto 0;
+  text-align: center;
+  width: fit-content;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background: linear-gradient(to right, #ff0000, #cc0000);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+  transition: transform 0.3s, background 0.3s;
+}
+
+a:hover {
+  background: linear-gradient(to right, #ffcc00, #ff2d2d);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffcc00, 0 0 25px #ff2d2d;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  color: #aaa;
+  border-top: 2px solid #ff2d2d;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  a {
+    font-size: 1rem;
+    width: 90%;
+  }
+}
