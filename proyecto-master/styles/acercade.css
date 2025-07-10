@@ -1,183 +1,149 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Estilo general del cuerpo */
+/* General */
 body {
-    background-color: #000;
-    color: #f5f5f5;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+  background-color: #000;
+  color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-/* Contenedor principal */
-#acerca, section {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px;
-    background: linear-gradient(to bottom right, #1a1a1a, #111);
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
-    border: 2px solid #ffcc00;
+/* Contenedor general */
+#acerca,
+section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(to bottom right, #1a1a1a, #111);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+  border: 2px solid #ffcc00;
 }
 
 /* Títulos */
-h1, h2, h3 {
-    text-align: center;
-    color: #ff2d2d;
-    margin-bottom: 20px;
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 20px;
 }
 
-#acerca h2, section h2 {
-    font-size: 2.5rem;
-    color: #ffcc00;
-    border-bottom: 3px solid #ff2d2d;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid #ff2d2d;
+  padding-bottom: 10px;
 }
 
 /* Listas */
 ul {
-    list-style: none;
-    padding-left: 20px;
-    margin-top: 10px;
+  list-style: none;
+  margin-top: 15px;
+  padding-left: 25px;
 }
 
 ul li::before {
-    content: '✔';
-    color: #ff2d2d;
-    margin-right: 8px;
+  content: "✔ ";
+  color: #ff2d2d;
+  margin-right: 8px;
 }
 
 ul li {
-    margin: 10px 0;
-    padding-left: 5px;
-    font-size: 1.1em;
+  margin: 10px 0;
+  font-size: 1.05em;
 }
 
 /* Párrafos */
-p, li {
-    font-size: 1.1em;
-    margin-bottom: 15px;
-    text-align: justify;
+p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  text-align: justify;
 }
 
 p:last-of-type {
-    text-align: center;
+  text-align: center;
 }
 
-/* Imágenes destacadas */
+/* Imágenes */
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin: 25px 0;
-    border: 3px solid #ffcc00;
-    box-shadow: 0 0 20px rgba(255, 204, 0, 0.4), 0 0 40px rgba(255, 45, 45, 0.3);
-    transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 25px auto;
+  border: 3px solid #ffcc00;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.4), 0 0 40px rgba(255, 45, 45, 0.3);
+  transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
 }
 
 img:hover {
-    transform: scale(1.05);
-    filter: brightness(1.2) contrast(1.1);
-    box-shadow: 0 0 30px rgba(255, 45, 45, 0.8), 0 0 50px rgba(255, 204, 0, 0.6);
+  transform: scale(1.05);
+  filter: brightness(1.2) contrast(1.1);
 }
 
-/* Contenedor de imágenes para layout */
-.img-container {
-    text-align: center;
-}
-
-/* Enlaces - estilo botón dojo */
+/* Botón enlace */
 a {
-    display: block;
-    width: 220px;
-    height: 50px;
-    margin: 30px auto;
-    background: linear-gradient(to right, #ff0000, #cc0000);
-    color: white;
-    padding: 12px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #cc0000;
-    transition: background 0.3s, transform 0.2s;
+  display: block;
+  width: fit-content;
+  max-width: 250px;
+  margin: 40px auto;
+  background: linear-gradient(to right, #ff0000, #cc0000);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #cc0000;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-    background: linear-gradient(to right, #ffcc00, #ff2d2d);
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #ffcc00, 0 0 25px #ff2d2d;
+  background: linear-gradient(to right, #ffcc00, #ff2d2d);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffcc00, 0 0 25px #ff2d2d;
 }
 
 /* Footer */
 footer {
-    background-color: #111;
-    text-align: center;
-    padding: 20px;
-    color: #999;
-    margin-top: 40px;
-    font-weight: bold;
-}
-
-/* Secciones específicas */
-.clases, .horarios, .beneficios {
-    margin-top: 30px;
-}
-
-.clases ul, .horarios ul, .beneficios ul {
-    padding-left: 20px;
-}
-
-.horarios ul ul {
-    margin-left: 20px;
-    margin-top: 5px;
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  margin-top: 40px;
+  font-weight: bold;
+  border-top: 1px solid #444;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
+  body {
+    padding: 10px;
+  }
 
-    #acerca, section {
-        padding: 15px;
-    }
+  h2 {
+    font-size: 1.5rem;
+  }
 
-    a {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 
-    img {
-        width: 100%;
-    }
-}
+  a {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+  }
 
-@media (max-width: 480px) {
-    body {
-        font-size: 0.9rem;
-    }
-
-    h2, h3 {
-        font-size: 1.4rem;
-    }
-
-    #acerca, section {
-        padding: 10px;
-    }
-
-    a {
-        padding: 10px 15px;
-        font-size: 0.9rem;
-    }
-
-    img {
-        margin: 15px 0;
-    }
+  #acerca,
+  section {
+    padding: 20px;
+    margin: 20px 10px;
+  }
 }
