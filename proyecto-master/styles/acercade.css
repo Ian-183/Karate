@@ -206,13 +206,14 @@ footer {
 .img-fluor {
   display: block;
   margin: 40px auto;
-  width: 520px;
-  height: auto;
+  max-width: 520px; /* ancho máximo */
+  width: 100%;      /* ocupa hasta el 100% del contenedor */
+  height: auto;     /* mantiene proporción */
   border: 3px solid #b3002d;
   border-radius: 20px;
   box-shadow: 0 0 10px #800020, 0 0 20px #800020, 0 0 30px #4d0010;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #1a1a1a; /* contraste si hay transparencia */
+  background-color: #1a1a1a;
 }
 
 .img-fluor:hover {
