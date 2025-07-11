@@ -172,7 +172,27 @@ p strong, li strong {
   box-shadow: 0 0 15px #990033, 0 0 30px #990033, 0 0 45px #66001a;
   cursor: pointer;
 }
+a {
+  display: inline-block;
+  max-width: 250px;
+  margin: 30px auto 0;
+  background: linear-gradient(90deg, #ff0000, #cc0000);
+  color: white;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #cc0000;
+  transition: all 0.3s ease;
+  font-size: 1.15em;
+}
 
+a:hover {
+  background: linear-gradient(90deg, #ffcc00, #ff2d2d);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ffcc00, 0 0 30px #ff2d2d;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
