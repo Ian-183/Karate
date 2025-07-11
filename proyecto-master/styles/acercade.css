@@ -203,6 +203,24 @@ footer {
     padding: 12px 0;
   }
 }
+.img-fluor {
+  display: block;
+  margin: 40px auto;
+  width: 520px;
+  height: auto;
+  border: 3px solid #b3002d;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #800020, 0 0 20px #800020, 0 0 30px #4d0010;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #1a1a1a; /* contraste si hay transparencia */
+}
+
+.img-fluor:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #990033, 0 0 30px #990033, 0 0 45px #66001a;
+  cursor: pointer;
+}
+
 
 /* Extras */
 /* Resaltar emojis dentro de textos para que tengan tamaño cómodo */
